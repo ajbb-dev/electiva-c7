@@ -9,7 +9,7 @@ from threading import *
 root = Tk()
 
 # Set geometry
-root.geometry("400x200")
+root.geometry("900x600")
 
 # Use Threading
 def Threading():
@@ -31,12 +31,12 @@ def alarm():
 
 		# Check whether set alarm is equal to current time or not
 		if current_time == set_alarm_time:
-			print("Time to Wake up")
+			print("Hora de levantarse")
 			# Playing sound
 			winsound.PlaySound("sound.wav",winsound.SND_ASYNC)
 
 # Add Labels, Frame, Button, Optionmenus
-Label(root,text="Alarm Clock",font=("Helvetica 20 bold"),fg="red").pack(pady=10)
+Label(root,text="Reloj Alarma",font=("Helvetica 20 bold"),fg="yellow").pack(pady=10)
 Label(root,text="Set Time",font=("Helvetica 15 bold")).pack()
 
 frame = Frame(root)
